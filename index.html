@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة مستقبل لتقنية المعلومات | mostkbal</title>
+    <meta name="description" content="مؤسسة مستقبل لتقنية المعلومات (mostkbal) - حلول برمجية متقدمة، تطوير تطبيقات الويب والجوال، واستشارات تقنية في الرياض، المملكة العربية السعودية.">
+    <meta name="keywords" content="mostkbal, مستقبل, تقنية معلومات, برمجة, تطبيقات, الرياض, شارع حمزه">
+    
+    <!-- Meta Facebook Domain Verification (يمكن تعديل رمز التحقق عند الحاجة) -->
+    <meta name="facebook-domain-verification" content="mostkbal_verification_code" />
+
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mosttkbal.github.io/">
+    <meta property="og:title" content="مؤسسة مستقبل لتقنية المعلومات | mostkbal">
+    <meta property="og:description" content="حلول تقنية رائدة، تطوير برمجيات، تطبيقات ويب وهواتف ذكية - الرياض، شارع حمزة.">
+    <meta property="og:image" content="https://mosttkbal.github.io/assets/logo.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+    <!-- Google Fonts: Cairo & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org JSON-LD Structured Data for LocalBusiness / Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "مؤسسة مستقبل لتقنية المعلومات",
+      "alternateName": "mostkbal",
+      "url": "https://mosttkbal.github.io",
+      "logo": "https://mosttkbal.github.io/assets/logo.jpg",
+      "image": "https://mosttkbal.github.io/assets/hero.jpg",
+      "telephone": "+966535292474",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع حمزه",
+        "addressLocality": "الرياض",
+        "postalCode": "12753",
+        "addressCountry": "SA"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Announcement Bar with Live Status -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="status-indicator" id="live-status-badge">
+                <span class="status-dot"></span>
+                <span id="status-text">جاري فحص حالة الدوام...</span>
+            </div>
+            <div class="top-contacts">
+                <a href="tel:0535292474" class="top-contact-link">
+                    <i data-lucide="phone" class="icon-sm"></i>
+                    <span>0535292474</span>
+                </a>
+                <span class="divider">|</span>
+                <span class="top-hours">
+                    <i data-lucide="clock" class="icon-sm"></i>
+                    <span>الأحد - الخميس: 8:00 ص - 6:00 م</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo">
+                <img src="assets/logo.jpg" alt="mostkbal logo" class="brand-img">
+                <div class="brand-text">
+                    <span class="brand-name">mostkbal</span>
+                    <span class="brand-sub">مؤسسة مستقبل للتقنية</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link active">من نحن</a>
+                <a href="#official" class="nav-link">البيانات الرسمية</a>
+                <a href="#services" class="nav-link">خدماتنا</a>
+                <a href="#contact" class="nav-link">تواصل معنا</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/966535292474?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" class="btn-whatsapp-header">
+                    <i data-lucide="message-circle" class="icon-sm"></i>
+                    <span>تواصل عبر واتساب</span>
+                </a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="القائمة">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="shield-check" class="icon-sm"></i>
+                    <span>مؤسسة تقنية وطنية معتمدة وموثقة</span>
+                </div>
+                <h1 class="hero-title">
+                    نبتكر حلول المستقبل الرقمي في 
+                    <span class="gradient-text">mostkbal</span>
+                </h1>
+                <p class="hero-desc">
+                    مؤسسة رائدة متخصصة في تقديم أحدث حلول تقنية المعلومات، برمجة وتطوير الأنظمة السحابية وتطبيقات الهاتف المحمول في مدينة الرياض بالمملكة العربية السعودية، وفق رؤية المملكة 2030 وأعلى معايير الجودة والأمان.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-primary">
+                        <i data-lucide="send" class="icon-sm"></i>
+                        <span>طلب استشارة أو خدمة</span>
+                    </a>
+                    <a href="tel:0535292474" class="btn btn-outline">
+                        <i data-lucide="phone-call" class="icon-sm"></i>
+                        <span>اتصال مباشر: 0535292474</span>
+                    </a>
+                </div>
+
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i data-lucide="map-pin" class="highlight-icon"></i>
+                        <div>
+                            <strong>المقر الرئيسي:</strong>
+                            <span>شارع حمزه، الرياض 12753</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i data-lucide="calendar" class="highlight-icon"></i>
+                        <div>
+                            <strong>أيام وساعات العمل:</strong>
+                            <span>الأحد إلى الخميس (8 ص - 6 م)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <div class="hero-card-frame">
+                    <img src="assets/hero.jpg" alt="فريق عمل مؤسسة مستقبل بالرياض" class="hero-img">
+                    <div class="hero-floating-badge badge-top">
+                        <i data-lucide="check-circle" class="badge-icon"></i>
+                        <div>
+                            <span class="badge-title">كيان موثق ورسمي</span>
+                            <span class="badge-sub">سجل وتراخيص سارية</span>
+                        </div>
+                    </div>
+                    <div class="hero-floating-badge badge-bottom">
+                        <i data-lucide="activity" class="badge-icon pulse"></i>
+                        <div>
+                            <span class="badge-title">دعم تقني متكامل</span>
+                            <span class="badge-sub">استجابة سريعة للعملاء</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (من نحن) -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">نبذة تعريفية</span>
+                <h2 class="section-title">من نحن</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <h3 class="card-heading">
+                        <i data-lucide="sparkles" class="icon-primary"></i>
+                        مؤسسة مستقبل لتقنية المعلومات (mostkbal)
+                    </h3>
+                    <p class="paragraph-lead">
+                        مؤسسة <strong>مستقبل (mostkbal)</strong> هي مؤسسة وطنية سعودية متخصصة في تقديم أحدث حلول تقنية المعلومات وتطوير البرمجيات والأنظمة الرقمية المخصصة للشركات والجهات والمؤسسات.
+                    </p>
+                    <p>
+                        نعمل بفريق تقني محترف يمتلك خبرات واسعة في تصميم وهندسة تطبيقات الويب الحديثة، وتطبيقات الهاتف الذكي لأنظمة iOS و Android، بالإضافة إلى البنى التحتية السحابية وحلول التحول الرقمي. نلتزم بأعلى معايير الأمان البرمجي، وسرعة التنفيذ، وتقديم الدعم الفني المستدام الذي يضمن لعملائنا النمو والريادة في السوق السعودي.
+                    </p>
+                    
+                    <div class="core-values-grid">
+                        <div class="value-item">
+                            <i data-lucide="target" class="value-icon"></i>
+                            <div>
+                                <h4>رؤيتنا</h4>
+                                <p>أن نكون الشريك التقني الأول الموثوق للمنشآت في المملكة.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i data-lucide="award" class="value-icon"></i>
+                            <div>
+                                <h4>رسالتنا</h4>
+                                <p>تمكين المؤسسات من التحول الرقمي بأحدث التقنيات وأفضل كفاءة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official Verification Data Table (مطابق للمتطلبات الرسمية والتحقق التجاري) -->
+                <div id="official" class="official-box">
+                    <div class="official-box-header">
+                        <i data-lucide="file-check-2" class="icon-lg"></i>
+                        <div>
+                            <h3>البيانات الرسمية والتحقق</h3>
+                            <p>المعلومات التجارية والقانونية المعتمدة للمنشأة</p>
+                        </div>
+                    </div>
+
+                    <table class="info-table">
+                        <tbody>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="building" class="icon-sm"></i>
+                                    الاسم التجاري
+                                </td>
+                                <td class="info-value">
+                                    <strong>مؤسسة مستقبل لتقنية المعلومات</strong>
+                                    <span class="en-tag">mostkbal</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="globe" class="icon-sm"></i>
+                                    الموقع الإلكتروني
+                                </td>
+                                <td class="info-value">
+                                    <a href="https://mosttkbal.github.io" target="_blank" class="site-link">
+                                        https://mosttkbal.github.io
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="file-text" class="icon-sm"></i>
+                                    النشاط المصرح
+                                </td>
+                                <td class="info-value">حلول تقنية المعلومات وتطوير البرمجيات والتطبيقات</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="map-pin" class="icon-sm"></i>
+                                    العنوان المعتمد
+                                </td>
+                                <td class="info-value">
+                                    شارع حمزه الرياض 12753، المملكة العربية السعودية
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="phone" class="icon-sm"></i>
+                                    رقم الاتصال الموحد
+                                </td>
+                                <td class="info-value">
+                                    <a href="tel:0535292474" class="phone-link">0535292474</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="clock" class="icon-sm"></i>
+                                    ساعات العمل الرسمية
+                                </td>
+                                <td class="info-value">من الأحد إلى الخميس: 8:00 صباحاً - 6:00 مساءً</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">
+                                    <i data-lucide="shield" class="icon-sm"></i>
+                                    حالة التحقق
+                                </td>
+                                <td class="info-value">
+                                    <span class="verified-pill">
+                                        <i data-lucide="check" class="icon-xs"></i>
+                                        منشأة موثقة ونشطة
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (خدماتنا) -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">مجالات خبرتنا</span>
+                <h2 class="section-title">خدماتنا وحلولنا البرمجية</h2>
+                <div class="section-divider center"></div>
+                <p class="section-subtext">
+                    نقدم باقة متكاملة من الخدمات التقنية المبتكرة المصممة خصيصاً لتلبية احتياجات الشركات ورواد الأعمال.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="code" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">تطوير تطبيقات الويب</h3>
+                    <p class="service-desc">
+                        تصميم وبرمجة مواقع وبوابات إلكترونية ومتاجر رقمية متكاملة وأنظمة إدارة محتوى مخصصة بأحدث التقنيات وأعلى معايير الأداء والسرعة.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> متوافقة مع جميع الشاشات والموبايل</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> سرعة فائقة وحماية متطورة</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="smartphone" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">تطبيقات الهاتف المحمول</h3>
+                    <p class="service-desc">
+                        تطوير وبرمجة تطبيقات هواتف ذكية (iOS و Android) بواجهات عصرية وتجربة مستخدم استثنائية قابلة للتوسع والربط مع الأنظمة السحابية.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> واجهات UI/UX عصرية وجذابة</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> أداء عالي وسلاسة في الاستخدام</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="compass" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">الاستشارات التقنية والتحول الرقمي</h3>
+                    <p class="service-desc">
+                        توجيه ودعم المنشآت لاختيار أفضل البنى البرمجية والحلول السحابية وأتمتة العمليات لرفع الكفاءة التشغيلية وخفض التكاليف.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> تخطيط استراتيجي للتحول الرقمي</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> دراسات جدوى وهندسة متطلبات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="headphones" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">الدعم الفني والصيانة المستمرة</h3>
+                    <p class="service-desc">
+                        خطط دعم وصيانة دورية لضمان استمرارية عمل المواقع والتطبيقات وحل المشكلات التقنية وتحديث الأنظمة الأمنية على مدار الساعة.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> مراقبة مستمرة للأنظمة والمخدمات</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> نسخ احتياطي وتحديثات أمنية منتظمة</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="shield-alert" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">حلول الأمن السيبراني وحماية البيانات</h3>
+                    <p class="service-desc">
+                        تأمين البرمجيات وقواعد البيانات والتأكد من مطابقة المعايير وحماية الأنظمة من التهديدات والاختراقات الإلكترونية.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> فحص الثغرات وتشفير البيانات</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> حماية الجدران النارية والشهادات الرقمية</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon-wrap">
+                        <i data-lucide="shopping-bag" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">المتاجر وبوابات الدفع الإلكتروني</h3>
+                    <p class="service-desc">
+                        بناء منصات تجارة إلكترونية متكاملة مع بوابات الدفع السعودية (مدى، Apple Pay، فيزا) وشركات الشحن والفوترة الإلكترونية.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="icon-xs"></i> ربط الفوترة الإلكترونية المعتمدة (فاتورة)</li>
+                        <li><i data-lucide="check" class="icon-xs"></i> إدارة متقدمة للمخزون والطلبات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (تواصل معنا) -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">قنوات الاتصال المباشر</span>
+                <h2 class="section-title">تواصل معنا</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtext">
+                    يسعدنا استقبال استفساراتكم والتعاون معكم لتنفيذ مشاريعكم التقنية بأعلى احترافية.
+                </p>
+            </div>
+
+            <!-- Contact Cards Row -->
+            <div class="contact-cards-grid">
+                <!-- Address Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3>العنوان والمقر</h3>
+                    <p class="contact-card-text" id="addressText">شارع حمزه الرياض 12753</p>
+                    <span class="contact-subtext">المملكة العربية السعودية</span>
+                    <div class="contact-actions">
+                        <button class="btn-sm btn-copy" onclick="copyToClipboard('شارع حمزه الرياض 12753', 'تم نسخ العنوان بنجاح!')">
+                            <i data-lucide="copy" class="icon-xs"></i>
+                            <span>نسخ العنوان</span>
+                        </button>
+                        <a href="https://www.google.com/maps/search/?api=1&query=%D8%B4%D8%A7%D8%B1%D8%B9+%D8%AD%D9%85%D8%B2%D9%87+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+12753" target="_blank" class="btn-sm btn-link-action">
+                            <i data-lucide="navigation" class="icon-xs"></i>
+                            <span>فتح في الخريطة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <h3>رقم الهاتف والتواصل</h3>
+                    <p class="contact-card-text phone-highlight" dir="ltr" id="phoneText">0535292474</p>
+                    <span class="contact-subtext">اتصال هاتفي أو واتساب مباشر</span>
+                    <div class="contact-actions">
+                        <a href="tel:0535292474" class="btn-sm btn-call">
+                            <i data-lucide="phone-outgoing" class="icon-xs"></i>
+                            <span>اتصال الآن</span>
+                        </a>
+                        <button class="btn-sm btn-copy" onclick="copyToClipboard('0535292474', 'تم نسخ الرقم بنجاح!')">
+                            <i data-lucide="copy" class="icon-xs"></i>
+                            <span>نسخ الرقم</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Working Hours Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="calendar-clock"></i>
+                    </div>
+                    <h3>ساعات وأيام العمل</h3>
+                    <p class="contact-card-text">من الأحد إلى الخميس</p>
+                    <span class="contact-subtext">8:00 صباحاً - 6:00 مساءً</span>
+                    <div class="contact-actions">
+                        <span class="live-pill" id="card-live-pill">
+                            <span class="status-dot"></span>
+                            <span id="card-status-text">أوقات العمل المعتمدة</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Website Card -->
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>الموقع الرسمي</h3>
+                    <p class="contact-card-text link-text">mosttkbal.github.io</p>
+                    <span class="contact-subtext">المنصة الرسمية المعتمدة</span>
+                    <div class="contact-actions">
+                        <a href="https://mosttkbal.github.io" target="_blank" class="btn-sm btn-link-action">
+                            <i data-lucide="external-link" class="icon-xs"></i>
+                            <span>زيارة الرابط</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Formal Contact Table & Direct Inquiry Form -->
+            <div class="contact-detail-grid">
+                <div class="contact-table-wrapper">
+                    <h3 class="table-heading">
+                        <i data-lucide="list-checks" class="icon-sm"></i>
+                        جدول بيانات الاتصال المعتمد
+                    </h3>
+                    <table class="info-table">
+                        <tbody>
+                            <tr>
+                                <td class="info-label">العنوان</td>
+                                <td>شارع حمزه الرياض 12753</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">رقم التليفون</td>
+                                <td><a href="tel:0535292474" class="phone-link">0535292474</a></td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">الموقع الإلكتروني</td>
+                                <td><a href="https://mosttkbal.github.io" class="site-link">https://mosttkbal.github.io</a></td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">ساعات العمل</td>
+                                <td>الأحد - الخميس: 8 صباحاً - 6 مساءً</td>
+                            </tr>
+                            <tr>
+                                <td class="info-label">أيام العطلة الرسمية</td>
+                                <td>الجمعة والسبت</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="action-banner">
+                        <div class="action-banner-text">
+                            <h4>هل تحتاج إلى عرض سعر أو استفسار سريع؟</h4>
+                            <p>فريقنا التقني مستعد للرد على كافة أسئلتكم فوراً.</p>
+                        </div>
+                        <a href="https://wa.me/966535292474?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20mostkbal%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9" target="_blank" class="btn btn-whatsapp-lg">
+                            <i data-lucide="message-square" class="icon-sm"></i>
+                            <span>محادثة واتساب مباشرة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Quick Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 class="table-heading">
+                        <i data-lucide="mail" class="icon-sm"></i>
+                        أرسل رسالة سريعة
+                    </h3>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="senderName">الاسم الكامل / اسم المنشأة *</label>
+                            <input type="text" id="senderName" class="form-control" placeholder="أدخل اسمك أو اسم شركتك" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senderPhone">رقم الجوال *</label>
+                            <input type="tel" id="senderPhone" class="form-control" placeholder="05XXXXXXXX" dir="ltr" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">الخدمة المطلوبة</label>
+                            <select id="serviceType" class="form-control">
+                                <option value="تطوير تطبيقات الويب">تطوير تطبيقات الويب والأنظمة</option>
+                                <option value="تطبيقات الهاتف المحمول">تطبيقات الهواتف الذكية (iOS / Android)</option>
+                                <option value="استشارات تقنية">استشارات تقنية وتحول رقمي</option>
+                                <option value="دعم فني وصيانة">دعم فني وصيانة برمجية</option>
+                                <option value="أخرى">استفسار عام</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageContent">تفاصيل الرسالة أو المشروع *</label>
+                            <textarea id="messageContent" rows="4" class="form-control" placeholder="اكتب نبذة عن متطلباتك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i data-lucide="send" class="icon-sm"></i>
+                            <span>إرسال الرسالة عبر واتساب</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpg" alt="mostkbal" class="footer-img">
+                    <span class="footer-name">mostkbal</span>
+                </div>
+                <p class="footer-tagline">
+                    مؤسسة مستقبل لتقنية المعلومات - الرياض، شارع حمزه 12753
+                </p>
+                <p class="footer-links-quick">
+                    <a href="#about">من نحن</a> • 
+                    <a href="#services">خدماتنا</a> • 
+                    <a href="#official">البيانات الرسمية</a> • 
+                    <a href="#contact">تواصل معنا</a>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة © 2026 <strong>مؤسسة مستقبل لتقنية المعلومات</strong> | mostkbal</p>
+                <p class="footer-tech">الموقع المعتمد: <a href="https://mosttkbal.github.io" class="footer-link">https://mosttkbal.github.io</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Copied Items -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <span id="toastMsg">تم النسخ بنجاح!</span>
+    </div>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/966535292474?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20mostkbal%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" class="floating-whatsapp" aria-label="محادثة واتساب">
+        <i data-lucide="message-circle" class="floating-icon"></i>
+        <span class="floating-tooltip">تواصل عبر واتساب</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
